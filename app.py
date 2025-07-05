@@ -1,43 +1,45 @@
-# app.py
-
+from flask import Flask, render_template, request
 from src.calculator import calculate_bmi, estimate_calories
 from src.recommender import load_food_data, recommend_meals
 
-def main():
-    print("Personalized Diet Recommender")
-    print("-" * 40)
+app = Flask(__name__)
 
-    # Step 1: Take user input
-    age = int(input("Enter your age: "))
-    gender = input("Enter your gender (M/F): ")
-    weight = float(input("Enter your weight (kg): "))
-    height = float(input("Enter your height (cm): "))
-    activity_level = input("Activity level (low/medium/high): ").lower()
-    goal = input("Your goal (weight_loss/maintain/weight_gain): ").lower()
+@app.route('/')
+def landing():
+    return render_template('landing.html')
 
-    # Step 2: BMI + calorie estimation
+@app.route('/form')
+def form():
+    return render_template('index.html')
+
+@app.route('/recommend', methods=['POST'])
+def recommend():
+    age = int(request.form['age'])
+    gender = request.form['gender']
+    weight = float(request.form['weight'])
+    height = float(request.form['height'])
+    activity = request.form['activity']
+    goal = request.form['goal']
+
     bmi = calculate_bmi(weight, height)
-    calories = estimate_calories(bmi, activity_level, goal)
+    calories = estimate_calories(bmi, activity, goal)
 
-    print(f"\nYour BMI is: {bmi}")
-    print(f"Recommended daily calories: {calories} kcal")
+    food_data = load_food_data('data/food_dataset.csv')
+    meals, total_calories = recommend_meals(food_data, calories)
 
-    # Step 3: Load food dataset
-    food_df = load_food_data("data/indian_food_nutrition.csv")
+    return render_template('result.html',
+                           bmi=bmi,
+                           calories=calories,
+                           meals=meals,
+                           total=total_calories,
+                           user_data={
+                               'age': age,
+                               'gender': gender,
+                               'weight': weight,
+                               'height': height,
+                               'activity': activity,
+                               'goal': goal
+                           })
 
-    # Step 4: Recommend meals
-    meals, total = recommend_meals(food_df, calories)
-
-    # Step 5: Show recommended diet plan
-    print("\nYour Personalized Diet Plan:\n")
-
-    for meal_type, items in meals.items():
-        print(f"{meal_type}:")
-        for item in items:
-            print(f"  - {item['Food']} ({item['Calories']} kcal)")
-        print()
-
-    print(f"Total Calories from meals: {total} kcal (target: {calories} kcal)\n")
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    app.run(debug=True)

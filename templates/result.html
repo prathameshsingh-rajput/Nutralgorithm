@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nutralgorithm - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="result-hero">
+    <div class="main-container">
+        <div class="content-card">
+            <h1>🍽️ Your <span>Indian</span> Diet Plan</h1>
+
+            <div class="result-highlight">
+                <p><strong>BMI:</strong> {{ bmi }}</p>
+                <p><strong>Recommended Calories:</strong> {{ calories }} kcal</p>
+            </div>
+
+            <img src="/static/images/indian-dish-sample.jpg" alt="Indian Thali" class="food-image">
+
+            {% for meal, items in meals.items() %}
+                <div class="meal-section">
+                    <h2>{{ meal }}</h2>
+                    {% for item in items %}
+                        <div class="result-item">
+                            <span>{{ item['Food'] }}</span>
+                            <strong>{{ item['Calories'] }} kcal</strong>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+
+            <div class="result-highlight">
+                <p><strong>Total Calories Suggested:</strong> {{ total }} kcal</p>
+            </div>
+
+            <a href="/" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
