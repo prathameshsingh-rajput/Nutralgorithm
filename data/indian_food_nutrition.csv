@@ -1,0 +1,81 @@
+Food,Type,Calories,Protein (g),Carbs (g),Fats (g)
+Oats,Breakfast,150,5,27,3
+Poha,Breakfast,180,4,30,5
+Upma,Breakfast,200,5,35,6
+Idli,Breakfast,130,3,28,1
+Dosa,Breakfast,170,4,30,6
+Paratha,Breakfast,260,6,32,12
+Aloo Paratha,Breakfast,300,7,34,14
+Thepla,Breakfast,190,5,28,7
+Chilla,Breakfast,160,8,20,4
+Moong Dal Chilla,Breakfast,170,9,18,4
+Bread Butter,Breakfast,220,4,25,12
+Vegetable Sandwich,Breakfast,240,6,30,10
+Paneer Sandwich,Breakfast,280,10,26,15
+Besan Chilla,Breakfast,150,6,18,5
+Masala Omelette,Breakfast,200,13,1,15
+Rava Dosa,Breakfast,180,4,32,6
+Sabudana Khichdi,Breakfast,300,4,40,14
+Idiyappam,Breakfast,120,3,24,1
+Pesarattu,Breakfast,180,9,22,4
+Kanda Poha,Breakfast,190,4,29,6
+Rajma Chawal,Lunch,350,12,50,10
+Chole Chawal,Lunch,360,13,52,11
+Paneer Butter Masala with Roti,Lunch,450,15,35,25
+Palak Paneer with Rice,Lunch,400,14,40,18
+Dal Tadka with Rice,Lunch,320,10,45,10
+Veg Pulao,Lunch,300,6,42,8
+Sambar Rice,Lunch,330,7,50,9
+Curd Rice,Lunch,290,6,38,12
+Vegetable Biryani,Lunch,400,8,55,15
+Kadhi Chawal,Lunch,310,7,48,8
+Stuffed Paratha with Curd,Lunch,420,10,38,18
+Mix Veg Curry with Roti,Lunch,350,9,30,15
+Bhindi Masala with Roti,Lunch,300,6,28,10
+Baingan Bharta with Roti,Lunch,280,5,25,9
+Aloo Gobi with Roti,Lunch,320,6,30,12
+Paneer Bhurji with Roti,Lunch,390,14,22,22
+Chana Masala with Rice,Lunch,340,11,44,10
+Lauki Curry with Rice,Lunch,270,5,35,8
+Tinda Sabzi with Roti,Lunch,250,5,28,7
+Pumpkin Curry with Roti,Lunch,260,4,30,8
+Khichdi,Dinner,300,9,42,9
+Vegetable Soup with Bread,Dinner,250,6,28,8
+Chapati with Dal,Dinner,280,8,30,7
+Paneer Tikka with Roti,Dinner,380,18,20,22
+Matar Paneer with Rice,Dinner,420,14,40,18
+Cabbage Sabzi with Roti,Dinner,260,5,28,7
+Lentil Soup with Brown Bread,Dinner,290,9,26,10
+Tofu Bhurji with Roti,Dinner,320,14,20,12
+Tomato Soup with Breadsticks,Dinner,230,5,25,6
+Boiled Egg Curry with Roti,Dinner,370,13,22,20
+Vegetable Dalia,Dinner,280,6,36,8
+Spinach Soup,Dinner,200,4,20,6
+Bottle Gourd Soup,Dinner,210,5,22,6
+Roti with Moong Dal,Dinner,290,8,30,7
+Roti with Chole,Dinner,330,10,32,10
+Roti with Baingan Bharta,Dinner,310,7,28,9
+Vegetable Handvo,Dinner,350,9,34,14
+Stuffed Capsicum with Roti,Dinner,300,8,26,11
+Roti with Mix Veg,Dinner,320,7,30,10
+Dal Palak with Rice,Dinner,330,9,38,9
+Samosa,Snacks,250,4,25,14
+Pakora,Snacks,280,5,20,18
+Bhel Puri,Snacks,180,4,28,6
+Sev Puri,Snacks,200,3,30,8
+Sprout Salad,Snacks,150,10,15,3
+Chana Chaat,Snacks,170,9,20,4
+Fruit Chaat,Snacks,140,2,28,2
+Poha Cutlet,Snacks,220,6,26,10
+Dhokla,Snacks,200,6,30,6
+Khandvi,Snacks,180,5,25,5
+Sabudana Vada,Snacks,300,3,30,18
+Masala Corn,Snacks,160,4,26,5
+Paneer Tikka,Snacks,240,14,8,16
+Aloo Tikki,Snacks,230,4,28,10
+Murukku,Snacks,260,4,22,16
+Namkeen Mixture,Snacks,300,5,24,20
+Bread Roll,Snacks,250,6,30,12
+Vegetable Cutlet,Snacks,220,5,25,10
+Moong Dal Chaat,Snacks,180,10,20,4
+Oats Tikki,Snacks,200,7,22,8
