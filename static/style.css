@@ -43,7 +43,7 @@ body {
 /* Hero Image Backgrounds */
 .index-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('/static/images/indian-food-bg.jpg');
+              url('/static/images/main-bg.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -55,7 +55,7 @@ body {
 
 .result-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('/static/images/indian-meal-bg.jpg');
+              url('/static/images/diet-plan.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
